@@ -1,6 +1,6 @@
 sudo: false
 language: python
--"3.6"
+-"2.7"
 
 cache:
   directories:
