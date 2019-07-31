@@ -8,11 +8,11 @@ cache:
 env:
  
 - GAE_PYTHONPATH=${HOME}/.cache/google_appengine PATH=$PATH:${HOME}/google-cloud-sdk/bin PYTHONPATH=${PYTHONPATH}:${GAE_PYTHONPATH} CLOUDSDK_CORE_DISABLE_PROMPTS=1
-before_install:
+#before_install:
  
-- if [ ! -d "${GAE_PYTHONPATH}" ]; then
-    python scripts/fetch_gae_sdk.py $(dirname "${GAE_PYTHONPATH}");
-  fi
+#- if [ ! -d "${GAE_PYTHONPATH}" ]; then
+ #   python scripts/fetch_gae_sdk.py $(dirname "${GAE_PYTHONPATH}");
+ # fi
  
 - DECRYPT_COMMAND
 # If the SDK is not already cached, download it and unpack it
