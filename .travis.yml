@@ -2,9 +2,9 @@ sudo: false
 language: python
 -"3.6.7"
 
-cache:
-  directories:
-  - "$HOME/google-cloud-sdk/"
+#cache:
+ # directories:
+ # - "$HOME/google-cloud-sdk/"
 #env:
  
 #- GAE_PYTHONPATH=${HOME}/.cache/google_appengine PATH=$PATH:${HOME}/google-cloud-sdk/bin PYTHONPATH=${PYTHONPATH}:${GAE_PYTHONPATH} CLOUDSDK_CORE_DISABLE_PROMPTS=1
@@ -14,15 +14,15 @@ cache:
  #   python scripts/fetch_gae_sdk.py $(dirname "${GAE_PYTHONPATH}");
  # fi
  
-- DECRYPT_COMMAND
+#- DECRYPT_COMMAND
 # If the SDK is not already cached, download it and unpack it
-- if [ ! -d ${HOME}/google-cloud-sdk ]; then
-     curl https://sdk.cloud.google.com | bash;
-  fi
-- tar -xzf credentials.tar.gz
-- mkdir -p lib
+#- if [ ! -d ${HOME}/google-cloud-sdk ]; then
+#     curl https://sdk.cloud.google.com | bash;
+#  fi
+#- tar -xzf credentials.tar.gz
+#- mkdir -p lib
 # Here we use the decrypted service account credentials to authenticate the command line tool
-- gcloud auth activate-service-account --key-file client-secret.json
+#- gcloud auth activate-service-account --key-file client-secret.json
 # [END auth]
 install:
 # Set the correct project to deploy to
