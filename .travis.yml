@@ -9,6 +9,6 @@ install:
   - pip freeze>> requirements.txt
   -pip install  -q Flask=FLASK_VERSION
    - python setup.py -q install
-script:
-- python app.py
+#script:
+#- python app.py
 
