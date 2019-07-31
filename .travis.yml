@@ -6,7 +6,7 @@ env:
 FLASK_VERSION=1.1.1
 install:
   - pip freeze>> requirements.txt
-  -pip install  -q flask=FLASK_VERSION
+  -pip install  -q Flask=FLASK_VERSION
 script:
 - python app.py
 
