@@ -5,4 +5,4 @@ cache: pip
 install:
   - pip freeze>> requirements.txt
 script:
-  - python test.py
+  - python app.py
