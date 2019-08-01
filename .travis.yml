@@ -8,5 +8,4 @@ script:
 - python app.py
 deploy:
 provider: gae
-keyfile: $248504  # "YOUR SERVICE ACCOUNT JSON FILE"
-project: $Homework3  #"YOUR PROJECT ID
+project: $Homework3-248504 #"YOUR PROJECT ID
