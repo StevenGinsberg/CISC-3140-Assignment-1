@@ -1,5 +1,5 @@
 language: python
 deploy:
 provider: gae
-keyfile: $GAE_KEY  # "YOUR SERVICE ACCOUNT JSON FILE"
-project: $PROJECT_ID2  #"YOUR PROJECT ID"
+keyfile: $248504 # "YOUR SERVICE ACCOUNT JSON FILE"
+project: $Homework3 #"YOUR PROJECT ID"
