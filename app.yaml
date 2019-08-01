@@ -8,5 +8,5 @@ script:
   - python app.py 
  deploy:
   provider: gae
-  keyfile: client-secret.json
-  project: cisc3140
+  keyfile: 873337458238 
+  project: Homework3-248504
