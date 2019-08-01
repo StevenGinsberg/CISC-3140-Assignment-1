@@ -6,4 +6,6 @@ install:
 - pip install -t lib -r requirements.txt
 script:
 - python app.py
- gc app deploy  --project Homework3-248504 #"YOUR PROJECT ID
+deploy:
+provider:gae
+project: Homework3-248504 #"YOUR PROJECT ID
