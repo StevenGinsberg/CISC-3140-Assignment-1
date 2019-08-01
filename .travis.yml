@@ -1,9 +1,5 @@
 language: python
-python:
-  - "3.7"
-cache: pip
-install:
-  - pip install -r requirements.txt
-script:
-  - python app.py
- 
+deploy:
+provider: gae
+keyfile: $GAE_KEY  # "YOUR SERVICE ACCOUNT JSON FILE"
+project: $PROJECT_ID2  #"YOUR PROJECT ID"
