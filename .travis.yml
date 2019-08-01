@@ -6,7 +6,4 @@ install:
 - pip install -t lib -r requirements.txt
 script:
 - python app.py
-deploy:
-provider: gae
-keyfile: 248504 # "YOUR SERVICE ACCOUNT JSON FILE"
-project: Homework3
+ 
