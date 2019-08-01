@@ -1,5 +1,6 @@
 language: python
 -"3.7"
+-"2.7"
 deploy:
 provider: gae
 keyfile: $248504 # "YOUR SERVICE ACCOUNT JSON FILE"
